@@ -23,6 +23,7 @@ def is_win(player, opponent):
         (player == 'p' and opponent == 'r'):
 
         return True
+    return False
 
 
 play()

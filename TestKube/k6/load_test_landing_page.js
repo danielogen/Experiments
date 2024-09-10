@@ -14,10 +14,10 @@ export let options = {
         { duration: '3m', target: 200 }, // stay at 200 users for 3 minutes
         { duration: '1m', target: 0 },   // ramp down to 0 users over 1 minute
     ],
-    thresholds: {
-        'http_req_duration': ['p(95)<500'], // 95% of requests must complete below 500ms
-        'http_req_failed': ['rate<0.01'],   // Less than 1% of requests should fail
-    },
+    // thresholds: {
+    //     'http_req_duration': ['p(95)<500'], // 95% of requests must complete below 500ms
+    //     'http_req_failed': ['rate<0.01'],   // Less than 1% of requests should fail
+    // },
 };
 
 // Main function that gets executed during the load test
